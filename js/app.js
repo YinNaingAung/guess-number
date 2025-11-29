@@ -2,12 +2,13 @@ let mesg1 = document.getElementById("mesg1");
 let chanceNum = document.getElementById("chance-num");
 let guessNum = document.getElementById("guess-num");
 let Chance =10;
+    chanceNum.textContent = "Number of chance to guess :" + Chance;
+
 let Guessed = [];
 let Container = document.getElementById("container");
 
  let random = Math.floor(Math.random()*50) +1;
     console.log(random);
-    chanceNum.textContent = "Number of chance to guess :" + Chance;
     //  document.getElementById("guess-btn").disabled = true;
 function play(){
    
